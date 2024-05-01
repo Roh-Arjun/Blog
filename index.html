@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		
+		@media screen and (max-width: 768px){
+			.top-banner__image{
+			display: none;
+		}
+		}
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<title>Personal Blog</title>
+</head>
+<body>
+
+	<!-- Top banner -->
+	<section class="fh5co-top-banner">
+		<div class="top-banner__inner site-container">
+			<div class="top-banner__image">
+				<img src="assets/images/topbanner.png"  alt="author image">
+			</div>
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">
+					<span class="brand-span">Hello! I'm</span>
+					<h2 class="top-banner__h2">Rohit</h2>
+				</div>
+				<div class="top-banner__text-down">
+					<!-- <h2 class="top-banner__h2">Mallikarjun</h2> -->
+					<span class="brand-span">Software Engineer</span>
+				</div>
+				<p>Live Code Die</p>
+				<a href="#aboutme" class="brand-button">Read bio > </a>
+			</div>
+		</div>
+	</section>
+	<!-- Top banner end -->
+
+	<!-- About me -->
+	<section class="fh5co-about-me">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				<div class="portfolio__img">
+					<img src="assets/images/ROH.jpg" class="about-me__profile" alt="about me profile picture">
+				</div>
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						<span>R</span>
+						<h2 class="universal-h2">ohit</h2>
+					</div>
+					<p>Software Developer</p>
+				</div>
+			</article>
+			<div class="about-me__text">
+				<div class="about-me-slider">
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">About me</h2>
+						<p><span>H</span>i, Everyone! I'm Rohh, a Full Stack Software Developer. Originally from Mysore, 
+							I graduated with a Bachelor of Engineering from NIE Institute of Technology. 
+							I'm passionate about software development and currently employed as an Associate Software Engineer at CloudTech Software, 
+							where I've gained <i id="experience"></i> of experience </p>						
+						<div class="social-icons">
+							<a href="https://www.instagram.com/d.u.k.k.o_03/" ><i class="fa fa-instagram" style="color: aliceblue;"></i></a>
+							<a href="https://www.facebook.com/rohith.mallikarjun" ><i class="fa fa-facebook" style="color: aliceblue;"></i></a>
+							<a href="https://www.youtube.com/channel/UCD00GKbys54jJZVgQU2_5Yw" ><i class="fa fa-youtube" style="color: aliceblue;"></i></a>
+						</div>
+						<h1> follow me</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="aboutme" class="about-me-bckg"></div>
+	</section>
+	<!-- About me end -->
+
+	<!-- Books and CD -->
+	<section class="fh5co-books">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">Services</h2>
+			<div class="books">
+				<div class="single-book">
+					<a href="#" class="single-book__img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<img src="assets/images/invitation.png" alt="single book and cd">						
+					</a>
+					<h4 class="single-book__title">Invitation Website</h4>
+				</div>
+				<div class="single-book">
+					<a href="#" class="single-book__img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<img src="assets/images/personblog.jpg" alt="single book and cd">
+					</a>
+					<h4 class="single-book__title">Personal Blog Website</h4>
+				</div>
+				<div class="single-book">
+					<a href="#" class="single-book__img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<img src="assets/images/Miniproject.png" alt="single book and cd">						
+					</a>
+					<h4 class="single-book__title">Mini Project</h4>
+				</div>
+				<div class="single-book">
+					<a href="#" class="single-book__img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<img src="assets/images/Final.jpg" alt="single book and cd">						
+					</a>
+					<h4 class="single-book__title">Diploma Projects</h4>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!-- Books and CD end -->
+
+	<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			
+			<form action="https://api.web3forms.com/submit" method="POST">
+
+				<!-- Replace with your Access Key -->
+				<input type="hidden" name="access_key" value="d2bdc7df-1dd7-4bbd-97f2-979b5fe1c081">
+
+				<div class="row gy-2 overflow-hidden">
+					<div class="col-12">
+					  <div class="form-floating">
+						<input type="text" class="form-control" name="name" id="fullname" placeholder="Full Name"  required>
+						<label for="fullname" class="form-label">Full Name</label>
+					  </div>
+					</div>
+					<div class="col-12">
+					  <div class="form-floating">
+						<input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+						<label for="email" class="form-label">Email</label>
+					  </div>
+					</div>
+					<div class="col-12">
+						<div class="form-floating">
+						  <input type="text" maxlength="10" class="form-control" name="phone" id="phone" placeholder="name@example.com" required>
+						  <label for="phone" class="form-label">Phone No</label>
+						</div>
+					  </div>
+					<div class="col-12">
+					  <div class="form-floating">
+						  <textarea type="text" class="form-control" placeholder="Message" id="message" name="message" rows="3"></textarea>
+						<!-- <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required> -->
+						<label for="message" class="form-label">Message</label>
+					  </div>
+					</div>
+					
+				  </div>
+
+				<!-- hCaptcha Spam Protection -->
+				<div class="h-captcha" data-captcha="true"></div>
+			
+				<!-- <button type="submit">Submit Form</button> -->
+				<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+				<div>
+					<button type="submit" class="btn btn-primary" style="width: 100%;" data-captcha="true">Submit</button>
+				</div>
+			</form>
+			
+			
+		</div>
+		<div class="modal-footer">
+		</div>
+	  </div>
+	</div>
+  </div>
+
+	<!-- Blog -->
+	<!-- <section class="fh5co-blog">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">My Blog</h2>
+			<div class="blog-slider blog-inner">
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="assets/images/blog1.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="assets/images/blog2.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="./images/blog2.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- Blog end -->
+
+	
+
+	<!-- Social -->
+	<section class="fh5co-social">
+		<div class="site-container">
+			<div class="social">
+				<h5>Follow me!!</h5>
+				<div class="social-icons">
+					<a href="https://www.instagram.com/d.u.k.k.o_03/" ><i class="fa fa-instagram" style="color: aliceblue;"></i></a>
+					<a href="https://www.facebook.com/rohith.mallikarjun" ><i class="fa fa-facebook" style="color: aliceblue;"></i></a>
+					<a href="https://www.youtube.com/channel/UCD00GKbys54jJZVgQU2_5Yw" ><i class="fa fa-youtube" style="color: aliceblue;"></i></a>
+				</div>
+				<h5>Share it!</h5>
+			</div>
+		</div>
+	</section>
+	<!-- Social -->
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="site-container">
+			<div class="footer-inner">
+				<div class="footer-info">
+					<div class="footer-info__left">
+						<img src="assets/images/footer-img.jpg" alt="about me image">
+						<p>Read more about me</p>
+					</div>
+					<div class="footer-info__right">
+						<h5>Get In Touch</h5>
+						<p class="footer-phone">Phone: <a href="tel:+917019970809">+91 70199 70809</a></p>
+						<p>Email : <a href="mailto:rohithbalagar18@gmail.com">rohithbalagar18@gmail.com</a></p>
+						<div class="social-icons">
+							<a href="https://www.instagram.com/d.u.k.k.o_03/" ><i class="fa fa-instagram" style="color: aliceblue;"></i></a>
+							<a href="https://www.facebook.com/rohith.mallikarjun" ><i class="fa fa-facebook" style="color: aliceblue;"></i></a>
+							<a href="https://www.youtube.com/channel/UCD00GKbys54jJZVgQU2_5Yw" ><i class="fa fa-youtube" style="color: aliceblue;"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="footer-contact-form">
+					<h5>Contact Form</h5>
+					<form class="contact-form" method="POST" id="form">
+						<input type="hidden" name="access_key" value="d2bdc7df-1dd7-4bbd-97f2-979b5fe1c081">
+						<div class="contact-form__input">
+							<input type="text" name="name" placeholder="Name" required>
+							<input type="email" name="email" placeholder="Email" required>
+						</div>
+						<textarea name="message"></textarea>
+						<!-- <div id="captcha" class="h-captcha" data-captcha="true"></div>
+						<input type="submit" name="submit" value="Submit"  onclick="validateCaptcha(event)" class="submit-button" data-captcha="true"> -->
+						<div class="h-captcha" data-captcha="true"></div>
+						<div id="errormessage" style="color:whitesmoke"></div>
+    					<input type="submit" name="submit" value="Submit" class="submit-button">	
+						<div id="result" style="color:whitesmoke"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+		
+		</div>
+	</footer>
+	<!-- Footer end -->
+	<!-- <script src="https://hcaptcha.com/1/api.js" async defer></script> -->
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+	integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
+	crossorigin="anonymous"></script>
+	
+	<script>
+		const form = document.getElementById('form');
+		const result = document.getElementById('result');
+		const errormessage = document.getElementById('errormessage');
+		
+		form.addEventListener('submit', function(e) {
+		  e.preventDefault();
+		  const formData = new FormData(form);
+		  const object = Object.fromEntries(formData);
+		  const json = JSON.stringify(object);
+		  result.innerHTML = "Please wait..."
+		
+			fetch('https://api.web3forms.com/submit', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+						'Accept': 'application/json'
+					},
+					body: json
+				})
+				.then(async (response) => {
+					let json = await response.json();
+					if (response.status == 200) {
+						result.innerHTML = "Form submitted successfully";
+					} else {
+						console.log(response);
+						errormessage.innerHTML = json.message;
+					}
+				})
+				.catch(error => {
+					console.log(error);
+					errormessage.innerHTML = "Something went wrong!";
+				})
+				.then(function() {
+					form.reset();
+					setTimeout(() => {
+						result.style.display = "none";
+						errormessage.style.display="none";
+					}, 3000);
+				});
+		});
+		</script>
+	<script>
+	function displayExperience(startDate) {
+		setInterval(function() {
+			var currentDate = new Date();
+			var timeDifference = currentDate - startDate;
+
+			var years = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 365));
+			var months = Math.floor((timeDifference % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
+
+			var experience = years + " years, " + months + " months";
+			//	console.log(experience)
+
+			// Displaying experience in the span with id "experience"
+			document.getElementById("experience").innerHTML = experience;
+		}, 1000);
+	}
+
+	// Example usage:
+	var startDate = new Date("2023-02-06T00:00:00");
+	displayExperience(startDate);
+	</script>
+ <!-- Required for hCaptcha -->
+ <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>
