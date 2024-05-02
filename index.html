@@ -180,6 +180,10 @@
 	</div>
   </div>
 
+<div>
+	<h1>Under Testing</h1>
+	<button id="shareBtn" class="btn btn-primary">SHARE</button>
+</div>
 	<!-- Blog -->
 	<!-- <section class="fh5co-blog">
 		<div class="site-container">
@@ -354,6 +358,27 @@
 	// Example usage:
 	var startDate = new Date("2023-02-06T00:00:00");
 	displayExperience(startDate);
+	</script>
+	<script>
+		const shareBtn = document.getElementById('shareBtn')
+
+shareBtn.addEventListener('click', event => {
+
+  // Check for Web Share api support
+  if (navigator.share) {
+    // Browser supports native share api
+    navigator.share({
+      text: 'Please check rohit\'s website: ',
+      url: 'https://roh-arjun.github.io/Blog/'
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+      .catch((err) => console.error(err));
+  } else {
+    // Fallback
+    alert("The current browser does not support the share function. Please, manually share the link")
+  }
+});
 	</script>
  <!-- Required for hCaptcha -->
  <script src="https://web3forms.com/client/script.js" async defer></script>
