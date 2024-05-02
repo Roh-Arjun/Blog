@@ -183,6 +183,7 @@
 <div>
 	<h1>Under Testing</h1>
 	<button id="shareBtn" class="btn btn-primary">SHARE</button>
+	<button onclick="sharefunc(event,'#aboutme')" class="btn btn-primary">share 2</button>
 </div>
 	<!-- Blog -->
 	<!-- <section class="fh5co-blog">
@@ -379,6 +380,25 @@ shareBtn.addEventListener('click', event => {
     alert("The current browser does not support the share function. Please, manually share the link")
   }
 });
+
+function sharefunc(event,value){
+	event.preventDefault();
+
+	 // Check for Web Share api support
+	 if (navigator.share) {
+    // Browser supports native share api
+    navigator.share({
+      text: 'Please check rohit\'s website: ',
+      url: 'https://roh-arjun.github.io/Blog/'+value
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+      .catch((err) => console.error(err));
+  } else {
+    // Fallback
+    alert("The current browser does not support the share function. Please, manually share the link")
+  }
+}
 	</script>
  <!-- Required for hCaptcha -->
  <script src="https://web3forms.com/client/script.js" async defer></script>
